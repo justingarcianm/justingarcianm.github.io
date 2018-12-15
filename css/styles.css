@@ -30,6 +30,7 @@ a{
 }
 #navbar a {
     transition: ease 500ms;
+    font-weight: bold;
 }
 #navbar a:hover {
     font-size: 1.2em;
@@ -200,4 +201,3 @@ footer a {
         padding: 50px 0;
     }
 }
-
