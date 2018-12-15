@@ -1,0 +1,144 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    color: #333D51;
+}
+nav {
+    background-color: #CBD0D8 ;
+    height: 50px;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+#navbar ul {
+    text-align: right;
+    padding-right: 20px;
+}
+#navbar ul li {
+    display: inline;
+    padding: 0 40px;
+}
+a{
+    text-decoration: none;
+    color: #333D51;
+}
+#welcome-section, #projects {
+    padding-top: 50px;
+    height: 100vh;
+}
+#welcome-section {
+    background-color: #CBD0D8 ;
+}
+
+#welcome-section header {
+    display: block;
+    margin: 40vh auto;
+    width: 40%;
+}
+#showArrow, #hideArrow {
+    cursor: pointer;
+    font-size: 2em;
+    color: #D3AC2B;
+}
+#arrowContent {
+   opacity: 0;
+    line-height: 1.5em;
+}
+#projects h2 {
+    margin-bottom: 0;
+}
+#project-box{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap:10px;
+    height: 80%;
+}
+.project-tile {
+    background-color: #333D51;
+    height: 300px;
+    width: 300px;
+    margin: auto;
+    border: 2px solid #333D51;
+}
+.project-img {
+    height: 250px;
+}
+img {
+    height: 100%;
+    width: 100%;
+}
+.project-title p {
+   line-height: 0.8em;
+   color: #F4F3EA;
+   font-weight: bold;
+}
+article {
+    margin-top: 30px;
+}
+.button {
+    background-color: #333D51;
+    padding: 15px 80px;
+    border-radius: 5px;
+    color: #F4F3EA;
+}
+#contact {
+    padding-top: 50px;
+    height: 90vh;
+    background-color: #D3AC2B;
+    color: #F4F3EA;
+}
+#contact a {
+    color: #F4F3EA;
+}
+#contact-links {
+    margin: 150px;
+}
+.contact-link {
+    display: inline-block;
+    font-size: 5em;
+    margin: 10px 60px;
+}
+    .linkTitle p{
+        font-size: 0.9rem;
+        margin-top: 0;
+        line-height: 0.5rem;
+    }
+footer {
+    background-color: #333D51;
+    padding: 15px;
+    color: #F4F3EA;
+    font-size: 0.9em;
+    font-family: monospace;
+    line-height: 0.5em;
+}
+
+
+@media (max-width: 600px) {
+    #welcome-section header{
+        width: 70%;
+    }
+    #navbar ul {
+        text-align: center;
+        padding: 0;
+        margin-bottom: 0;
+    }
+    #navbar ul li {
+        padding: 0 5px;
+    }
+    #project-box {
+        margin-top: 50px;
+        grid-template-columns: 1fr;
+        height: 650px;
+        overflow: auto;
+    }
+    #contact-links {
+        margin: 100px auto;
+    }
+}
+
