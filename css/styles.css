@@ -28,6 +28,12 @@ a{
     text-decoration: none;
     color: #333D51;
 }
+#navbar a {
+    transition: ease 500ms;
+}
+#navbar a:hover {
+    font-size: 1.2em;
+}
 #welcome-section, #projects {
     padding-top: 50px;
     height: 100vh;
@@ -41,10 +47,16 @@ a{
     margin: 40vh auto;
     width: 40%;
 }
+#welcome-section p, #hideArrow {
+    color: #D3AC2B;
+}
+#showArrow, #arrowContent p {
+    color: #333D51;
+}
+
 #showArrow, #hideArrow {
     cursor: pointer;
     font-size: 2em;
-    color: #D3AC2B;
 }
 #arrowContent {
    opacity: 0;
@@ -68,11 +80,31 @@ a{
 }
 .project-img {
     height: 250px;
+    background-image: url('https://images.pexels.com/photos/160107/pexels-photo-160107.jpeg?auto=compress&cs=tinysrgb&h=650&w=940');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
-img {
-    height: 100%;
-    width: 100%;
+.project-side-1 a, .project-side-2 a{
+    display: inline-block;
+    color: #CBD0D8;
+    font-size: 2em;
+    padding: 100px 0;
+    opacity: 0;
+    transition: ease 500ms;
 }
+.project-side-1, .project-side-2 {
+    background-color: #333D51;
+    opacity: 0;
+    transition: ease 500ms;
+}
+
+.project-side-1 a:hover, .project-side-2 a:hover,.project-side-1:hover, .project-side-2:hover {
+    opacity: .9;
+}
+
 .project-title p {
    line-height: 0.8em;
    color: #F4F3EA;
@@ -86,6 +118,12 @@ article {
     padding: 15px 80px;
     border-radius: 5px;
     color: #F4F3EA;
+    transition: ease 500ms;
+}
+.button:hover {
+    color:#333D51;
+    background-color: #CBD0D8;
+    border: 1px solid #333D51;
 }
 #contact {
     padding-top: 50px;
@@ -103,6 +141,10 @@ article {
     display: inline-block;
     font-size: 5em;
     margin: 10px 60px;
+    transition: ease 500ms;
+}
+.contact-link:hover {
+    font-size: 7em;
 }
     .linkTitle p{
         font-size: 0.9rem;
@@ -139,9 +181,23 @@ footer a {
         grid-template-columns: 1fr;
         height: 650px;
         overflow: auto;
+        padding: 0 10px;
+    }
+    #project-box ::-webkit-scrollbar {
+        width: 1px;
     }
     #contact-links {
         margin: 100px auto;
+    }
+    .project-tile {
+        height: 100%;
+        width: 100%;
+    }
+    .project-img {
+        height: 150px;
+    }
+    .project-side-1 a, .project-side-2 a {
+        padding: 50px 0;
     }
 }
 
