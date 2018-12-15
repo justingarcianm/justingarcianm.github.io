@@ -1,3 +1,4 @@
+/* DOC */
 html {
     scroll-behavior: smooth;
 }
@@ -9,6 +10,7 @@ body {
     text-align: center;
     color: #333D51;
 }
+/* NAV */
 nav {
     background-color: #CBD0D8 ;
     height: 50px;
@@ -35,6 +37,7 @@ a{
 #navbar a:hover {
     font-size: 1.2em;
 }
+/* WELCOME */
 #welcome-section, #projects {
     padding-top: 50px;
     height: 100vh;
@@ -63,6 +66,7 @@ a{
    opacity: 0;
     line-height: 2em;
 }
+/* PROJECTS */
 #projects h2 {
     margin-bottom: 0;
 }
@@ -81,12 +85,30 @@ a{
 }
 .project-img {
     height: 250px;
-    background-image: url('https://images.pexels.com/photos/160107/pexels-photo-160107.jpeg?auto=compress&cs=tinysrgb&h=650&w=940');
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: 400px;
+    background-position: top;
+    background-size: 450px;
     display: grid;
     grid-template-columns: 1fr 1fr;
+
+}
+#p1 {
+    background-image: url('../img/email.JPG');
+}
+#p2 {
+    background-image: url('../img/yelpCamp.JPG');
+}
+#p3 {
+    background-image: url('https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260');
+}
+#p4 {
+    background-image: url('https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260');
+}
+#p5 {
+    background-image: url('https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260');
+}
+#p6 {
+    background-image: url('https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260');
 }
 .project-side-1 a, .project-side-2 a{
     display: inline-block;
@@ -126,6 +148,7 @@ article {
     background-color: #CBD0D8;
     border: 1px solid #333D51;
 }
+/* CONTACT */
 #contact {
     padding-top: 50px;
     height: 90vh;
@@ -147,11 +170,12 @@ article {
 .contact-link:hover {
     font-size: 7em;
 }
-    .linkTitle p{
-        font-size: 0.9rem;
-        margin-top: 0;
-        line-height: 0.5rem;
-    }
+.linkTitle p{
+    font-size: 0.9rem;
+    margin-top: 0;
+    line-height: 0.5rem;
+}
+/* FOOTER */
 footer {
     background-color: #333D51;
     padding: 15px;
@@ -164,7 +188,7 @@ footer a {
     color: #D3AC2B;
 }
 
-
+/* MOBILE */
 @media (max-width: 600px) {
     #welcome-section header{
         width: 70%;

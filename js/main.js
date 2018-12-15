@@ -1,3 +1,4 @@
+// opens paragraph in welcome section
 var showArrow = document.querySelector("#showArrow");
 var arrowContent = document.querySelector('#arrowContent');
 var hideArrow = document.querySelector('#hideArrow');
