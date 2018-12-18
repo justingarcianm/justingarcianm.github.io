@@ -47,7 +47,6 @@ a{
 }
 
 #welcome-section header {
-    display: block;
     margin: 35vh auto;
     width: 40%;
 }
@@ -68,7 +67,6 @@ a{
 }
 /* PROJECTS */
 #projects h2 {
-   margin: 0;
     text-transform: uppercase;
     letter-spacing: 0.2em;
 }
@@ -86,7 +84,6 @@ a{
     border: 2px solid #333D51;
 }
 .project-img {
-    height: 250px;
     background-repeat: no-repeat;
     background-position: top;
     background-size: 450px;
@@ -210,7 +207,7 @@ footer a {
         margin-top: -100px;
     }
     #welcome-section header{
-        width: 70%;
+        margin: 35vh auto; 
     }
     #navbar ul {
         text-align: center;
@@ -249,14 +246,20 @@ footer a {
 }
 
 @media (max-height:800px) {
-    #welcome-section, #projects, #contact {
+    #welcome-section header{
+        margin: 20vh auto;
+    }
+    #welcome-section, #contact {
         padding: 50px 0;
-        height: 100%;
+
     }
     #contact-links {
         margin: 50px;
     }
     #projects h2 {
         margin-bottom: 20px;
+    }
+    footer {
+        margin-top: 0;
     }
 }
