@@ -247,7 +247,7 @@ footer a {
 
 @media (max-height:800px) {
     #welcome-section header{
-        margin: 20vh auto;
+        margin: 20vh auto 0 auto;
     }
     #welcome-section, #contact {
         padding: 50px 0;
