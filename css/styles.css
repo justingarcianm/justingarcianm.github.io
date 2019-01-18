@@ -214,14 +214,9 @@ footer a {
 
 /* MOBILE */
 @media (max-width: 600px) {
-    #welcome-section, #projects, #contact {
-        height: 100%;
-    }
-    footer {
-        margin-top: -100px;
-    }
+
     #welcome-section header{
-        margin: 35vh auto; 
+        margin: 25vh auto;
     }
     #project-box {
         margin-top: 50px;
@@ -257,7 +252,6 @@ footer a {
     }
     #welcome-section, #contact {
         padding: 50px 0;
-
     }
     #contact-links {
         margin: 50px;
