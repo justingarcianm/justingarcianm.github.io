@@ -49,19 +49,26 @@ function showProject(event) {
     }
 }
 
-function slider(test, test2, test3) {
-    console.log(test, test2)
-    test.classList.toggle(test2);
-    document.querySelector(".section-title").textContent = test.textContent
-    if (test3.style.display != "grid") {
-        test3.style.display = "grid"
+function slider(slideId, slideClass, slideText) {
+    // opens slide
+    slideToggle(slideId, slideClass)
+    // adds title from main doc to slide
+    document.querySelector(".section-title").textContent = slideId.textContent
+    // dispalys the content and toggles an animation to the slide
+    display(slideText)
+}
+//  function for slide toggler
+function slideToggle(id, cls) {
+    id.classList.toggle(cls);
+}
+// function for animations and text
+function display(disp) {
+    if (disp.style.display != "grid" && disp.classList != ("w3-animate-left")) {
+        disp.style.display = "grid"
+        disp.classList.add("w3-animate-left")
     } else {
-        test3.style.display = "none"
-    }
-    if (test3.classList != ("w3-animate-left")) {
-        test3.classList.add("w3-animate-left")
-    } else {
-        test3.classList.remove("w3-animate-left")
+        disp.style.display = "none"
+        disp.classList.remove("w3-animate-left")
     }
 }
 
