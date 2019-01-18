@@ -93,12 +93,12 @@ a{
     font-size: 2em;
     opacity: 0;
     transition: 500ms ease;
-    cursor: pointer;
 }
 .project-title span {
     color: #D3AC2B;
     text-transform: uppercase;
     font-weight: bold;
+    cursor: pointer;
 }
 .project-title:hover {
     border-radius: 10px 10px 0 0;
