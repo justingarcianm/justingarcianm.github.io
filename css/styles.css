@@ -94,10 +94,11 @@ a{
     opacity: 0;
     transition: 500ms ease;
 }
-.project-title a {
+.project-title span {
     color: #D3AC2B;
     text-transform: uppercase;
     font-weight: bold;
+    cursor: pointer;
 }
 .project-title:hover {
     border-radius: 10px 10px 0 0;
@@ -112,7 +113,7 @@ a{
     background-color: #CBD0D8;
     border-radius: 0 0 10px 10px;
 }
-.project-links a {
+.project-links p {
     font-family: 'Open Sans', sans-serif;
 }
 .project-links i, .project-links a {
@@ -137,12 +138,6 @@ a{
     background-image: url('https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260');
 }
 
-.project-title p {
-   color: #F4F3EA;
-   font-weight: bold;
-   font-size: 1.5em;
-   letter-spacing: .1em;
-}
 article {
     margin-top: 30px;
 }
@@ -246,13 +241,13 @@ footer a {
     }
     .project-tile {
         height: 100%;
-        width: 100%;
+        width: 70%;
     }
     .project-img {
-        height: 150px;
+        width: 100%
     }
-    .project-side-1 a, .project-side-2 a {
-        padding: 50px 0;
+    .project-links {
+        font-size: 2em;
     }
 }
 
