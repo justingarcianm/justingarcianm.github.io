@@ -18,3 +18,15 @@ function hideContent() {
 showArrow.addEventListener("click", showContent, false);
 hideArrow.addEventListener("click", hideContent, false);
 
+// reveals text for each project
+var slide1 = document.querySelector("#slide1");
+var trigger = document.querySelector(".trigger");
+var close = document.querySelectorAll("close-button");
+
+function showSlide() {
+    slide1.style.opacity = ".9";
+    slide1.classList.toggle("slide-content1")
+    console.log("hello");
+}
+
+trigger.addEventListener("click", showSlide);
