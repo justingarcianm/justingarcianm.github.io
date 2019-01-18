@@ -27,28 +27,42 @@ var proj1 = document.getElementById("proj-1"),
     proj5 = document.getElementById("proj-5"),
     proj6 = document.getElementById("proj-6");
 
+var p1Content = document.querySelector(".p1Content");
+
 var projectTitle = document.querySelectorAll(".project-title")
 
 function showProject(event) {
     if (event.target === proj1) {
-        test("proj1");
+        slider(proj1, "slider1", p1Content);
     } else if (event.target === proj2) {
-        test("proj2");
+        slider(proj2);
     } else if (event.target === proj3) {
-        test("proj3");
+        slider(proj3);
     } else if (event.target === proj4) {
-        test("proj4");
+        slider(proj4);
     } else if (event.target === proj5) {
-        test("proj5");
+        slider(proj5);
     } else if (event.target === proj6) {
-        test("proj6");
+        slider(proj6);
     } else {
         console.log("not a proj")
     }
 }
 
-function test(test) {
-    console.log(test)
+function slider(test, test2, test3) {
+    console.log(test, test2)
+    test.classList.toggle(test2);
+    document.querySelector(".section-title").textContent = test.textContent
+    if (test3.style.display != "grid") {
+        test3.style.display = "grid"
+    } else {
+        test3.style.display = "none"
+    }
+    if (test3.classList != ("w3-animate-left")) {
+        test3.classList.add("w3-animate-left")
+    } else {
+        test3.classList.remove("w3-animate-left")
+    }
 }
 
 (function () {

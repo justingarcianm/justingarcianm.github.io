@@ -137,7 +137,43 @@ a{
 #p6 {
     background-image: url('https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260');
 }
-
+.project-title img {
+    width: 100%;
+}
+.slider1 {
+    position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        z-index: 2;
+}
+.p1Content {
+    display: none;
+    position: fixed;
+    top: 10%;
+    left: 0;
+    background-color: white;
+    padding: 1rem 1.5rem;
+    width: 90%;
+    z-index: 2;
+    grid-template-columns: 1fr 1fr;
+}
+.p1Content p {
+    font-size: .6em;
+    line-height: 1em;
+    padding: 0 20px;
+    text-align: left;
+}
+.p1Content .section-title {
+    font-size: 1.5em;
+    text-transform: uppercase;
+    color: #D3AC2B;
+}
+.p1Content .header {
+    font-weight: bold;
+}
 article {
     margin-top: 30px;
 }
