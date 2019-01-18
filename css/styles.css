@@ -13,14 +13,13 @@ body {
 /* NAV */
 nav {
     background-color: #CBD0D8 ;
-    height: 50px;
+    height: 55px;
     position: fixed;
     width: 100%;
     z-index: 2;
 }
 #navbar ul {
-    text-align: right;
-    padding-right: 20px;
+    padding: 0;
 }
 #navbar ul li {
     display: inline;
@@ -34,6 +33,7 @@ a{
 #navbar a {
     transition: ease 500ms;
     font-weight: bold;
+
 }
 #navbar a:hover {
     font-size: 1.2em;
@@ -93,12 +93,12 @@ a{
     font-size: 2em;
     opacity: 0;
     transition: 500ms ease;
+    cursor: pointer;
 }
 .project-title span {
     color: #D3AC2B;
     text-transform: uppercase;
     font-weight: bold;
-    cursor: pointer;
 }
 .project-title:hover {
     border-radius: 10px 10px 0 0;
@@ -163,14 +163,14 @@ article {
 #contact a {
     color: #F4F3EA;
 }
-#contact-links {
-    margin: 150px;
-}
 .contact-link {
     display: inline-block;
     font-size: 5em;
     margin: 10px 60px;
     transition: ease 500ms;
+}
+#contact-links {
+    margin: 150px auto;
 }
 .contact-link:hover {
     font-size: 7em;
@@ -202,19 +202,23 @@ footer a {
         height: 100%;
         padding-bottom: 50px;
     }
-    #navbar ul {
-        text-align: center;
-        padding: 0;
-        margin-bottom: 0;
-    }
     #navbar ul li {
-        padding: 0 5px;
+        padding: 0 50px;
+    }
+    #contact {
+        height: 100%;
+        padding: 20px;
+    }
+    #contact-links {
+        margin: 0 auto;
     }
 }
 
 /* MOBILE */
 @media (max-width: 600px) {
-
+    #navbar ul li {
+        padding: 0 10px;
+    }
     #welcome-section header{
         margin: 25vh auto;
     }
@@ -228,11 +232,8 @@ footer a {
     #project-box ::-webkit-scrollbar {
         width: 1px;
     }
-    #contact {
-        margin-top: 50px;
-    }
     #contact-links {
-        margin: 100px auto;
+        margin: auto;
     }
     .project-tile {
         height: 100%;
@@ -248,18 +249,15 @@ footer a {
 
 @media (max-height:800px) {
     #welcome-section header{
-        margin: 20vh auto 0 auto;
+        margin: 10vh auto 0 auto;
     }
-    #welcome-section, #contact {
-        padding: 50px 0;
-    }
-    #contact-links {
-        margin: 50px;
+    #welcome-section, #projects, #contact, footer {
+        height: 100%;
     }
     #projects h2 {
         margin-bottom: 20px;
     }
-    footer {
-        margin-top: 0;
+    #contact-links {
+        margin: 0 auto;
     }
 }
