@@ -20,46 +20,31 @@ hideArrow.addEventListener("click", hideContent, false);
 
 // toggle slides for each project
 
-var proj1 = document.getElementById("proj-1"),
-    proj2 = document.getElementById("proj-2"),
-    proj3 = document.getElementById("proj-3"),
-    proj4 = document.getElementById("proj-4"),
-    proj5 = document.getElementById("proj-5"),
-    proj6 = document.getElementById("proj-6");
-
-var p1Content = document.querySelector(".p1Content");
-
-var projectTitle = document.querySelectorAll(".project-title")
-
+var project = document.querySelectorAll(".project"),
+    content = document.querySelectorAll(".content"),
+    projectTitle = document.querySelectorAll(".project-title")
+// when click event is triggered, a for loop sets the arguments for the slider
 function showProject(event) {
-    if (event.target === proj1) {
-        slider(proj1, "slider1", p1Content);
-    } else if (event.target === proj2) {
-        slider(proj2);
-    } else if (event.target === proj3) {
-        slider(proj3);
-    } else if (event.target === proj4) {
-        slider(proj4);
-    } else if (event.target === proj5) {
-        slider(proj5);
-    } else if (event.target === proj6) {
-        slider(proj6);
-    } else {
-        console.log("not a proj")
+    for (let i = 0; i < project.length && content.length; i++) {
+        if (event.target === project[i]) {
+            slider(project[i], "slider", content[i]);
+        } else {
+            console.log("not a proj")
+        }
     }
 }
-
-function slider(slideId, slideClass, slideText) {
+// the arguments from the previous for loop are used for this slider function
+function slider(project, slideClass, content) {
     // opens slide
-    slideToggle(slideId, slideClass)
+    slideToggle(project, slideClass)
     // adds title from main doc to slide
-    document.querySelector(".section-title").textContent = slideId.textContent
+    document.querySelector(".section-title").textContent = project.textContent
     // dispalys the content and toggles an animation to the slide
-    display(slideText)
+    display(content)
 }
 //  function for slide toggler
-function slideToggle(id, cls) {
-    id.classList.toggle(cls);
+function slideToggle(project, content) {
+    project.classList.toggle(content);
 }
 // function for animations and text
 function display(disp) {
@@ -71,7 +56,7 @@ function display(disp) {
         disp.classList.remove("w3-animate-left")
     }
 }
-
+// event listener when project title is clicked
 (function () {
     for (let i = 0; i < projectTitle.length; i++) {
         projectTitle[i].addEventListener("click", showProject);

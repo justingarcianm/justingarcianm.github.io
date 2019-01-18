@@ -140,7 +140,7 @@ a{
 .project-title img {
     width: 100%;
 }
-.slider1 {
+.slider {
     position: fixed;
         left: 0;
         top: 0;
@@ -149,7 +149,7 @@ a{
         background-color: rgba(0, 0, 0, 0.8);
         z-index: 2;
 }
-.p1Content {
+.p1Content, .content {
     display: none;
     position: fixed;
     top: 10%;
