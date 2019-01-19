@@ -113,7 +113,7 @@ a{
     background-color: #CBD0D8;
     border-radius: 0 0 10px 10px;
 }
-.project-links p {
+.project-links a {
     font-family: 'Open Sans', sans-serif;
 }
 .project-links i, .project-links a {
@@ -149,31 +149,44 @@ a{
         background-color: rgba(0, 0, 0, 0.8);
         z-index: 2;
 }
-.p1Content, .content {
+ .content {
     display: none;
     position: fixed;
     top: 10%;
     left: 0;
-    background-color: white;
+    background-color: #F4F3EA;
     padding: 1rem 1.5rem;
     width: 90%;
     z-index: 2;
     grid-template-columns: 1fr 1fr;
 }
-.p1Content p {
+.content p {
     font-size: .6em;
     line-height: 1em;
     padding: 0 20px;
     text-align: left;
 }
-.p1Content .section-title {
+.content .section-title {
     font-size: 1.5em;
     text-transform: uppercase;
     color: #D3AC2B;
 }
-.p1Content .header {
+.content .header {
     font-weight: bold;
 }
+.content .project-links {
+    border-radius: 0;
+    background-color: #F4F3EA;
+}
+.close-button {
+    font-size: 2em;
+    cursor: pointer;
+    width: 10px;
+    position: absolute;
+    top: 0;
+    left: 92%;
+}
+
 article {
     margin-top: 30px;
 }
