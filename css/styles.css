@@ -1,15 +1,13 @@
 /* DOC */
 html {
     scroll-behavior: smooth;
-}
-
-body {
     padding: 0;
     margin: 0;
     font-family: 'Open Sans', sans-serif;
     text-align: center;
     color: #333D51;
 }
+
 /* NAV */
 nav {
     background-color: #CBD0D8 ;
@@ -94,11 +92,19 @@ a{
     opacity: 0;
     transition: 500ms ease;
 }
-.project-title span {
+.project-title h3 {
     color: #D3AC2B;
     text-transform: uppercase;
     font-weight: bold;
     cursor: pointer;
+    font-size: 1.1em;
+}
+.project-title h3 span {
+    padding-right: 10px;
+    float: right;
+    font-size: 0.5em;
+    color: #CBD0D8;
+    font-weight: normal;
 }
 .project-title:hover {
     border-radius: 10px 10px 0 0;
@@ -152,12 +158,20 @@ a{
  .content {
     display: none;
     position: fixed;
-    top: 10%;
+    top: 150px;
     left: 0;
-    background-color: #F4F3EA;
-    padding: 1rem 1.5rem;
-    width: 90%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), #333d51);
+    width: 100%;
+    height: 100%;
     z-index: 2;
+}
+.content img {
+    width: 35%;
+    padding: 20px;
+}
+.content .section-2 {
+    padding: 20px;
+    display: grid;
     grid-template-columns: 1fr 1fr;
 }
 .content p {
@@ -165,6 +179,7 @@ a{
     line-height: 1em;
     padding: 0 20px;
     text-align: left;
+    color: #CBD0D8;
 }
 .content .section-title {
     font-size: 1.5em;
@@ -173,18 +188,28 @@ a{
 }
 .content .header {
     font-weight: bold;
+    color: #D3AC2B;
+    text-transform: uppercase;
+}
+.content .section-2 {
+    border-top: #D3AC2B solid 5px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
 }
 .content .project-links {
     border-radius: 0;
-    background-color: #F4F3EA;
+    background-color: rgba(0, 0, 0, 0);
+    display:grid;
+    grid-template-columns: 1fr;
+    border-left: #D3AC2B solid 5px;
 }
-.close-button {
-    font-size: 2em;
-    cursor: pointer;
-    width: 10px;
-    position: absolute;
-    top: 0;
-    left: 92%;
+.content .project-links i {
+   margin-top: 40px;
+   padding: 10px;
+   color: #D3AC2B;
+}
+.content .project-links a {
+    color: #D3AC2B;
 }
 
 article {

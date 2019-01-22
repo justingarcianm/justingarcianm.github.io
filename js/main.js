@@ -22,7 +22,9 @@ hideArrow.addEventListener("click", hideContent, false);
 
 var project = document.querySelectorAll(".project"),
     content = document.querySelectorAll(".content"),
-    projectTitle = document.querySelectorAll(".project-title")
+    projectTitle = document.querySelectorAll(".project-title");
+
+
 // when click event is triggered, a for loop sets the arguments for the slider
 function showProject(event) {
     for (let i = 0; i < project.length && content.length; i++) {
@@ -37,8 +39,6 @@ function showProject(event) {
 function slider(project, slideClass, content) {
     // opens slide
     slideToggle(project, slideClass)
-    // adds title from main doc to slide
-    document.querySelector(".section-title").textContent = project.textContent
     // dispalys the content and toggles an animation to the slide
     display(content)
 }
@@ -48,13 +48,16 @@ function slideToggle(project, content) {
 }
 // function for animations and text
 function display(disp) {
-    if (disp.style.display != "grid" && disp.classList != ("w3-animate-left")) {
-        disp.style.display = "grid"
-        disp.classList.add("w3-animate-left")
+    if (disp.style.display != "block" && disp.classList != ("w3-animate-left")) {
+        disp.style.display = "block"
+        disp.classList.add("w3-animate-bottom")
     } else {
         disp.style.display = "none"
-        disp.classList.remove("w3-animate-left")
+        disp.classList.remove("w3-animate-bottom")
     }
+}
+function closeSlide(event) {
+    console.log(event.target)
 }
 // event listener when project title is clicked
 (function () {
@@ -62,3 +65,4 @@ function display(disp) {
         projectTitle[i].addEventListener("click", showProject);
     }
 })();
+
