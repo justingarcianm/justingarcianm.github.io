@@ -1,10 +1,7 @@
 # Welcome to my New Portfolio!
-    I wanted to take a minimal approach to my portfolio, so this whas not only created from vanilla languages( with the acceptions of a couple of cdn libraries) I stripped off the photo from the previous version to bring emphasis to my projects.
+    I wanted to take a minimal approach to my portfolio, so careated a single page app that has 3 sections and that is responsive.
 
 ## languages used:
 * html
-* css3
+* css3 + bootstrap 4
 * javascript
-## with help from these cdn's:
-* w3schools
-* font awesome

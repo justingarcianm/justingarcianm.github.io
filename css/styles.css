@@ -40,7 +40,7 @@ nav a:hover {
     cursor: pointer;
 }
 .arrow-toggle {
-    margin-top: 100px;
+    margin-top: 125px;
     transform: rotate(180deg);
     opacity: 0;
     color: #D3AC2B;
@@ -48,8 +48,9 @@ nav a:hover {
 #arrow-down {
     transition: 1s ease;
     position: absolute;
-    top: 56vh;
-    left: 49vw;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -60%);
     z-index: 2;
 }
 #arrow-up {
@@ -67,6 +68,8 @@ nav a:hover {
 }
 #contact, #contact i, #contact a {
     color: #F4F3EA;
+    transition: 500ms ease;
+    text-decoration: none;
 }
 #contact,#contact header {
     padding: 120px 0;
@@ -76,4 +79,7 @@ nav a:hover {
 }
 #contact i {
     font-size: 6em;
+}
+#contact i:hover, #contact a:hover {
+    color: #333D51;
 }
