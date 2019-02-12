@@ -90,3 +90,14 @@ nav a:hover {
 #contact i:hover, #contact a:hover {
     color: #333D51;
 }
+
+@media (max-width: 498px) {
+    #about {
+        padding-top: 10vh;
+        background-color: #CBD0D8;
+    }
+    #arrow-down {
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+}

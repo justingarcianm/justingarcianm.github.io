@@ -1,4 +1,4 @@
-// reveal about section
+// reveal about text
 
 const arrowDown = document.getElementById("arrow-down"),
     arrowUp = document.getElementById("arrow-up"),
