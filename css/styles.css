@@ -10,8 +10,9 @@ header h2 {
 }
 nav {
     position: fixed;
-    top: 40vh;
-    left: 90vw;
+    top: 40%;
+    left: 95%;
+    transform: translate(-95%, -40%);
 }
 nav ul li{
     list-style: none;
@@ -27,6 +28,12 @@ nav a:hover {
     background-color: #D3AC2B;
     color: #F4F3EA;
 }
+#projects .more {
+    background-color: #333D51;
+}
+#projects .more:hover {
+    color: #D3AC2B;
+}
 #about {
     height: 100vh;
     padding-top: 40vh;
@@ -40,8 +47,8 @@ nav a:hover {
     cursor: pointer;
 }
 .arrow-toggle {
-    margin-top: 125px;
-    transform: rotate(180deg);
+    margin-top: 100px;
+    transform: rotate(180deg) !important;
     opacity: 0;
     color: #D3AC2B;
 }
