@@ -16,8 +16,5 @@
     "url": "https://github.com/justingarcianm/justingarcianm.github.io/issues"
   },
   "homepage": "https://github.com/justingarcianm/justingarcianm.github.io#readme",
-  "dependencies": {
-    "bootstrap": "^4.3.0",
-    "jquery": "^3.3.1"
-  }
+  "dependencies": {}
 }
