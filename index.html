@@ -5,319 +5,123 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Justin Garcia</title>
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
-        crossorigin="anonymous">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
-<body>
-    <!-- NAVBAR -->
-    <nav id="navbar"">
-        <ul class=" w3-animate-top">
-        <li><a href="#welcome-section">About</a></li>
-        <li><a href="#projects">Work</a></li>
-        <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-    <!-- NAVBAR CLOSE-->
-    <!-- MAIN -->
+<body class="text-center">
     <main>
-        <!-- WELCOME -->
-        <section id="welcome-section">
-            <header class="w3-animate-top">
-                <h1>Hey, I'm Justin. </h1>
-                <p>A web developer</p>
-                <i class="fas fa-angle-down w3-animate-opacity" id="showArrow"></i>
-                <div id="arrowContent">
-                    <p>Since 2017 I have commited myself to teaching myself web
-                        development. I am front end focused using the Vue framework, but I also have the skills to take
-                        on full stack
-                        with Node, mongodb, and firebase. Below are some of my projects and ways to get a hold of me.
-                    </p>
-                    <i class="fas fa-angle-up" id="hideArrow"></i>
-                </div>
+        <nav>
+            <ul>
+                <li><a href="#about"><i class="fas fa-circle link"></i></a></li>
+                <li><a href="#projects"><i class="far fa-circle link"></i></a></li>
+                <li><a href="#bottom"><i class="far fa-circle link"></i></a></li>
+            </ul>
+        </nav>
+        <section id="about">
+
+            <h1 class="display-1">Hi, I'm Justin</h1>
+            <p class="accent">A web Developer</p>
+            <div id="arrow-down"><i class="fas fa-angle-down"></i></div>
+            <div class="hidden-text container">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur architecto aspernatur vel
+                    numquam iste. Sapiente amet placeat, eaque eligendi asperiores natus obcaecati recusandae
+                    officiis dignissimos nihil ab! Explicabo, natus vitae.</p>
+                <div id="arrow-up"><i class="fas fa-angle-up"></i></div>
+            </div>
+
+        </section>
+        <section id="projects" class="container">
+            <header>
+                <h2 class="display-2">Projects</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae veniam error
+                    asperiores architecto!
+                    Nihil, neque.</p>
             </header>
-        </section>
-        <!-- WELCOME CLOSE -->
-        <!-- PROJECTS -->
-        <section id="projects">
-            <h2>Projects</h2>
-            <div id="project-box">
-                <!-- PROJECT-1 -->
-                <div class="project-tile">
-                    <div class="project-img" id="p1">
-                        <div class="project-title">
-                            <h3 class="project">html email</h3>
-                            <div class="content">
-                                <div class="section-1">
-                                    <img src="img/email.JPG">
-                                </div>
-                                <div class="section-2">
-                                    <div class="section-text">
-                                        <p class="header">Problem</p>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem recusandae
-                                            nostrum nulla. Maxime nam incidunt veritatis, sit dolore earum maiores.</p>
-                                        <p class="header">Action</p>
-                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est in esse quasi
-                                            sequi quam. Dolores error repellendus libero nulla. Perferendis.</p>
-                                        <p class="header">Solution</p>
-                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste labore quasi
-                                            sint
-                                            magnam laboriosam explicabo autem unde et eveniet perferendis.</p>
-                                    </div>
-                                    <div class="project-links">
-                                        <i class="fas fa-desktop"><a href="https://justingarcianm.github.io/localbistro.github.io/"
-                                                target="_blank"> demo</a></i>
-                                        <i class="fas fa-code"> <a href="https://github.com/justingarcianm/localbistro.github.io"
-                                                target="_blank">code</a></i>
-                                    </div>
-
-                                </div>
-
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-links">
-                        <i class="fas fa-desktop"><a href="email-index.html" target="_blank"> demo</a></i>
-                        <i class="fas fa-code"> <a href="https://github.com/justingarcianm/email" target="_blank">code</a></i>
-                    </div>
+            <div class="row">
+                <div class="col">
+                    <h3>Artist Website</h3>
+                    <img src="/img/artistSite.JPG" class="img-fluid">
                 </div>
-                <!-- PROJECT-2 -->
-                <div class="project-tile">
-                    <div class="project-img" id="p2">
-                        <div class="project-title">
-                            <h3 class="project">yelpcamp</h3>
-                            <div class="content">
-                                <div class="section-1">
-                                    <img src="img/yelpCamp.JPG" alt="">
-                                </div>
-                                <div class="section-2">
-                                    <div class="section-text">
-                                        <p class="header">Problem</p>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem recusandae
-                                            nostrum nulla. Maxime nam incidunt veritatis, sit dolore earum maiores.</p>
-                                        <p class="header">Action</p>
-                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est in esse quasi
-                                            sequi quam. Dolores error repellendus libero nulla. Perferendis.</p>
-                                        <p class="header">Solution</p>
-                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste labore quasi
-                                            sint
-                                            magnam laboriosam explicabo autem unde et eveniet perferendis.</p>
-                                    </div>
-                                    <div class="project-links">
-                                        <i class="fas fa-desktop"><a href="https://intense-castle-67500.herokuapp.com/"
-                                                target="_blank"> demo</a></i>
-                                        <i class="fas fa-code"> <a href="https://github.com/justingarcianm/YelpCamp"
-                                                target="_blank">code</a></i>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-links">
-                        <i class="fas fa-desktop"><a href="https://intense-castle-67500.herokuapp.com/" target="_blank">
-                                demo</a></i>
-                        <i class="fas fa-code"> <a href="https://github.com/justingarcianm/YelpCamp" target="_blank">code</a></i>
-                    </div>
+                <div class="col">
+                    <p class=" text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam voluptates
+                        quaerat esse! Quo
+                        consequatur inventore deserunt quia et, officiis dolore enim autem totam culpa eaque praesentium
+                        suscipit, magnam iusto! Et nihil beatae numquam corrupti. Dicta illo necessitatibus quidem, aut
+                        odit rerum, voluptatum laborum ad esse nisi dolores iste doloribus voluptas.</p>
+                    <a href="#" class="btn"><i class="fas fa-code"></i> Code</a>
+                    <a href="#" class="btn"><i class="fas fa-desktop"></i> Demo</a>
                 </div>
-                <!-- PROJECT-3 -->
-                <div class="project-tile">
-                    <div class="project-img" id="p3">
-                        <div class="project-title">
-                            <h3 class="project">artist website</h3>
-                            <div class="content">
-                                <div class="section-1">
-                                    <img src="img/artistPage.JPG" alt="">
-                                </div>
-                                <div class="section-2">
-                                    <div class="section-text">
-                                        <p class="header">Problem</p>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem recusandae
-                                            nostrum nulla. Maxime nam incidunt veritatis, sit dolore earum maiores.</p>
-                                        <p class="header">Action</p>
-                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est in esse quasi
-                                            sequi quam. Dolores error repellendus libero nulla. Perferendis.</p>
-                                        <p class="header">Solution</p>
-                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste labore quasi
-                                            sint
-                                            magnam laboriosam explicabo autem unde et eveniet perferendis.</p>
-                                    </div>
-                                    <div class="project-links">
-                                        <i class="fas fa-desktop"><a href="https://justingarcianm.github.io/aaronart.github.io/"
-                                                target="_blank"> demo</a></i>
-                                        <i class="fas fa-code"> <a href="https://github.com/justingarcianm/aaronart.github.io"
-                                                target="_blank">code</a></i>
-                                    </div>
-
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-links">
-                        <i class="fas fa-desktop"><a href="https://intense-castle-67500.herokuapp.com/" target="_blank">
-                                demo</a></i>
-                        <i class="fas fa-code"> <a href="https://github.com/justingarcianm/YelpCamp" target="_blank">code</a></i>
-                    </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h3>YelpCamp</h3>
+                    <img src="/img/yelpYamp.JPG" class="img-fluid">
                 </div>
-                <!-- PROJECT-4 -->
-                <div class="project-tile">
-                    <div class="project-img" id="p4">
-                        <div class="project-title">
-                            <h3 class="project">local bistro</h3>
-                            <div class="content">
-                                <div class="section-1">
-                                    <img src="img/localBistro.JPG">
-                                </div>
-                                <div class="section-2">
-                                    <div class="section-text">
-                                        <p class="header">Problem</p>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
-                                            recusandae
-                                            nostrum nulla. Maxime nam incidunt veritatis, sit dolore earum maiores.</p>
-                                        <p class="header">Action</p>
-                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est in esse
-                                            quasi
-                                            sequi quam. Dolores error repellendus libero nulla. Perferendis.</p>
-                                        <p class="header">Solution</p>
-                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste labore
-                                            quasi
-                                            sint
-                                            magnam laboriosam explicabo autem unde et eveniet perferendis.</p>
-                                    </div>
-                                    <div class="project-links">
-                                        <i class="fas fa-desktop"><a href="https://justingarcianm.github.io/localbistro.github.io/"
-                                                target="_blank"> demo</a></i>
-                                        <i class="fas fa-code"> <a href="https://github.com/justingarcianm/localbistro.github.io"
-                                                target="_blank">code</a></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-links">
-                        <i class="fas fa-desktop"><a href="https://justingarcianm.github.io/localbistro.github.io/"
-                                target="_blank"> demo</a></i>
-                        <i class="fas fa-code"> <a href="https://github.com/justingarcianm/localbistro.github.io"
-                                target="_blank">code</a></i>
-                    </div>
+                <div class="col">
+                    <p class=" text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam voluptates
+                        quaerat esse! Quo
+                        consequatur inventore deserunt quia et, officiis dolore enim autem totam culpa eaque praesentium
+                        suscipit, magnam iusto! Et nihil beatae numquam corrupti. Dicta illo necessitatibus quidem, aut
+                        odit rerum, voluptatum laborum ad esse nisi dolores iste doloribus voluptas.</p>
+                    <a href="#" class="btn"><i class="fas fa-code"></i> Code</a>
+                    <a href="#" class="btn"><i class="fas fa-desktop"></i> Demo</a>
                 </div>
-                <!-- PROJECT-5 -->
-                <div class="project-tile">
-                    <div class="project-img" id="p5">
-                        <div class="project-title">
-                            <h3 class="project">placeholder</h3>
-                            <div class="content">
-                                <div class="section-1">
-                                </div>
-                                <div class="section-2">
-                                    <div class="section-text">
-                                        <p class="header">Problem</p>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem recusandae
-                                            nostrum nulla. Maxime nam incidunt veritatis, sit dolore earum maiores.</p>
-                                        <p class="header">Action</p>
-                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est in esse quasi
-                                            sequi quam. Dolores error repellendus libero nulla. Perferendis.</p>
-                                        <p class="header">Solution</p>
-                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste labore quasi
-                                            sint
-                                            magnam laboriosam explicabo autem unde et eveniet perferendis.</p>
-                                    </div>
-                                    <div class="project-links">
-                                        <i class="fas fa-desktop"><a href="#" target="_blank"> demo</a></i>
-                                        <i class="fas fa-code"> <a href="#" target="_blank">code</a></i>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-links">
-                        <i class="fas fa-desktop"><a href="#" target="_blank"> demo</a></i>
-                        <i class="fas fa-code"> <a href="#" target="_blank">code</a></i>
-                    </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h3>Local Bistro</h3>
+                    <img src="/img/localBistro.JPG" class="img-fluid">
                 </div>
-                <!-- PROJECT-6 -->
-                <div class="project-tile">
-                    <div class="project-img" id="p6">
-                        <div class="project-title">
-                            <h3 class="project">placeholder</h3>
-                            <div class="content">
-                                <div class="section-1">
-                                </div>
-                                <div class="section-2">
-                                    <div class="section-text">
-                                        <p class="header">Problem</p>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem recusandae
-                                            nostrum nulla. Maxime nam incidunt veritatis, sit dolore earum maiores.</p>
-                                        <p class="header">Action</p>
-                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est in esse quasi
-                                            sequi quam. Dolores error repellendus libero nulla. Perferendis.</p>
-                                        <p class="header">Solution</p>
-                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste labore quasi
-                                            sint
-                                            magnam laboriosam explicabo autem unde et eveniet perferendis.</p>
-                                    </div>
-                                    <div class="project-links">
-                                        <i class="fas fa-desktop"><a href="#" target="_blank"> demo</a></i>
-                                        <i class="fas fa-code"> <a href="#" target="_blank">code</a></i>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-links">
-                        <i class="fas fa-desktop"><a href="#" target="_blank"> demo</a></i>
-                        <i class="fas fa-code"> <a href="#" target="_blank">code</a></i>
-                    </div>
+                <div class="col">
+                    <p class=" text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam voluptates
+                        quaerat esse! Quo
+                        consequatur inventore deserunt quia et, officiis dolore enim autem totam culpa eaque praesentium
+                        suscipit, magnam iusto! Et nihil beatae numquam corrupti. Dicta illo necessitatibus quidem, aut
+                        odit rerum, voluptatum laborum ad esse nisi dolores iste doloribus voluptas.</p>
+                    <a href="#" class="btn"><i class="fas fa-code"></i> Code</a>
+                    <a href="#" class="btn"><i class="fas fa-desktop"></i> Demo</a>
                 </div>
             </div>
 
-            <article>
-                <a href="https://github.com/justingarcianm" target="_blank" class="button">Show all</a>
-            </article>
-
+            <div class="row">
+                <div class="col-sm-12">
+                    <a href="#" class="btn">See More</a>
+                </div>
+            </div>
         </section>
-        <!-- PROJECTS CLOSE -->
-        <!-- CONTACT -->
         <section id="contact">
-            <h2>Let's Talk | Let's Learn | Let's Work</h2>
-            <p>Let's start!</p>
-            <div id="contact-links">
-                <a href="https://github.com/justingarcianm" target="_blank" class="contact-link"><i class="fab fa-github-square"></i>
-                    <div class="linkTitle">
-                        <p>GitHub</p>
+            <header>
+                <h2 class="display-3">Let's Talk | Let's Learn | Let's Work</h2>
+                <p>Want to know more? slect one of the links below or just email me at justingarcianm@gmail.com</p>
+            </header>
+            <div class="container">
+                <div class="row">
+                    <div class="col"><a href=""><i class="fab fa-github-square"></i>
+                            <p>Github</p>
+                        </a>
                     </div>
-                </a>
-                <a href="#" class="contact-link"><i class="fas fa-address-card"></i>
-                    <div class="linkTitle">
-                        <p>Resume</p>
+                    <div class="col"><a href="#"><i class="fas fa-file"></i>
+                            <p>Resume</p>
+                        </a>
                     </div>
-                </a>
-                <a href="mailto:justingarcianm@gmail.com?subject=Your%20portfolio%20sent%20me" target="_blank" class="contact-link"><i
-                        class="fas fa-envelope"></i>
-                    <div class="linkTitle">
-                        <p>Email</p>
-                    </div>
-                </a>
+                    <div class="col"><a href="#"><i class="fas fa-envelope"></i>
+                            <p>Email</p>
+                        </a></div>
+                </div>
             </div>
         </section>
-        <!-- CONTACT CLOSE -->
-        <!-- FOOTER -->
-        <footer>
-            <p>Created by <a href="https://github.com/justingarcianm" target="_blank">Justin Garcia</a>
-                2018</p>
+        <div id="bottom">
 
-        </footer>
-        <!-- FOOTER CLOSE -->
+        </div>
     </main>
-    <!-- MAIN CLOSE -->
+
+    <script src="/node_modules/jquery/dist/jquery.js"></script>
+
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.js"></script>
     <script src="js/main.js"></script>
 </body>
 

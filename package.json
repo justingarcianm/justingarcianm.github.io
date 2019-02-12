@@ -1,0 +1,24 @@
+{
+  "name": "myportfolio",
+  "version": "1.0.0",
+  "description": "I wanted to take a minimal approach to my portfolio, so this whas not only created from vanilla languages( with the acceptions of a couple of cdn libraries) I stripped off the photo from the previous version to bring emphasis to my projects.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/justingarcianm/justingarcianm.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/justingarcianm/justingarcianm.github.io/issues"
+  },
+  "homepage": "https://github.com/justingarcianm/justingarcianm.github.io#readme",
+  "dependencies": {
+    "bootstrap": "^4.3.0",
+    "jquery": "^3.3.1",
+    "popper": "^1.0.1"
+  }
+}
