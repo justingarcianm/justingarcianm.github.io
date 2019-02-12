@@ -13,6 +13,7 @@ nav {
     top: 40%;
     left: 95%;
     transform: translate(-95%, -40%);
+    z-index: 2;
 }
 nav ul li{
     list-style: none;
@@ -28,12 +29,7 @@ nav a:hover {
     background-color: #D3AC2B;
     color: #F4F3EA;
 }
-#projects .more {
-    background-color: #333D51;
-}
-#projects .more:hover {
-    color: #D3AC2B;
-}
+
 #about {
     height: 100vh;
     padding-top: 40vh;
@@ -67,8 +63,15 @@ nav a:hover {
    opacity: 0;
    transition: 1s ease;
 }
+
 #projects .row {
     padding: 20px;
+}
+#projects .more {
+    background-color: #333D51;
+}
+#projects .more:hover {
+    color: #D3AC2B;
 }
 #contact {
     background-color: #D3AC2B;
@@ -91,6 +94,7 @@ nav a:hover {
     color: #333D51;
 }
 
+/* MOBILE */
 @media (max-width: 498px) {
     #about {
         padding-top: 10vh;
@@ -99,5 +103,11 @@ nav a:hover {
     #arrow-down {
         top: 50%;
         transform: translate(-50%, -50%);
+    }
+    .display-2,.display-3 {
+        font-size: 3rem;
+    }
+    #contact header {
+        padding: 0
     }
 }
