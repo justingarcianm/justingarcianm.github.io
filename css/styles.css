@@ -19,6 +19,9 @@ nav ul li{
     list-style: none;
     padding-bottom: 15px;
 }
+nav i {
+    width: 100%;
+}
 a {
     color: #222;
 }
